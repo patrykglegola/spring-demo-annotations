@@ -1,5 +1,6 @@
-package com.luv2code.springdemo;
+package com.luv2code.springdemo.services.impl;
 
+import com.luv2code.springdemo.services.FortuneService;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
