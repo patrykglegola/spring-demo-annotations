@@ -3,6 +3,7 @@ package com.luv2code.springdemo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.Random;
 
 @Component
@@ -13,6 +14,10 @@ public class propertiesFileFortuneService implements FortuneService {
 
     private Random randomNumberGenerator = new Random();
 
+    @PostConstruct
+    public void loadFortune() {
+        System.out.println(">> propertiesFileFortuneService loadFortune method: " + getFortune());
+    }
 
     @Override
     public String getFortune() {
