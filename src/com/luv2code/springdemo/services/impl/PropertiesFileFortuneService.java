@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import java.util.Random;
 
 @Component
-public class propertiesFileFortuneService implements FortuneService {
+public class PropertiesFileFortuneService implements FortuneService {
 
     @Value("${fortuneService.fortunes}")
     private String[] data;
