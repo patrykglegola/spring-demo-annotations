@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.util.Random;
 
-@Component
+//@Component
 public class propertiesFileFortuneService implements FortuneService {
 
     @Value("${fortuneService.fortunes}")
